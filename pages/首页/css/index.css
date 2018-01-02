@@ -332,6 +332,11 @@ style.firebugResetStyles {
     color: black;
     background-color: #f5f5f5;
 }
+#operating-trajectory .operating-list-wrap .operating-list li.outside:hover {
+    cursor: pointer;
+    background-color: #00a65a;
+    color:white;
+}
 
 #operating-trajectory .operating-list-wrap .operating-list li.first {
     color: #3eaf0e;
@@ -736,3 +741,89 @@ style.firebugResetStyles {
 #example1_paginate{
     text-align: center;
 }
+
+.index-small-box .index-small-box-footer{
+  margin-bottom: 50px;
+}
+.index-small-box .small-box-item.flip  .warp .small-box-front{
+    transform: rotateY(180deg);
+    -ms-transform:rotateY(180deg); 	/* IE 9 */
+    -moz-transform:rotateY(180deg); 	/* Firefox */
+    -webkit-transform:rotateY(180deg); /* Safari 和 Chrome */
+    -o-transform:rotateY(180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all 0.4s ease-in-out;
+
+}
+.index-small-box .small-box-item .warp  .small-box-front{
+    transform: rotate(0deg);
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.index-small-box .small-box-item .warp{
+    position: relative;
+}
+.index-small-box .small-box-item.flip .warp  .small-box-back{
+    transform: rotate(0deg);
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.index-small-box .small-box-item .warp .small-box-back{
+    transform: rotateY(-180deg);
+    -ms-transform:rotateY(-180deg); 	/* IE 9 */
+    -moz-transform:rotateY(-180deg); 	/* Firefox */
+    -webkit-transform:rotateY(-180deg); /* Safari 和 Chrome */
+    -o-transform:rotateY(-180deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.index-small-box .small-box-item-more{
+    display: none;
+}
+.index-small-box .small-box-item-more.active{
+    display: block;
+}
+
+.detail-userinfo-table{
+    width: 100%;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.detail-userinfo-table .table-item{
+    background-color: #f4f4f4;
+}
+.detail-userinfo-table th,.detail-userinfo-table td{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+.small-box:hover {
+    color: #000;
+}
+
+

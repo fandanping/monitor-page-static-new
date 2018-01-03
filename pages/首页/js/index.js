@@ -4,8 +4,12 @@ var Index=(function(){
           $(".index-small-box-footer").click(function(){
               if( $(".small-box-item-more").hasClass("active")){
                   $(".small-box-item-more").removeClass("active");
+                  $(".small-box-item-more").hide(1000);
               }else{
-                  $(".small-box-item-more").addClass("active");
+
+                  $(".small-box-item-more").show(function(){
+                      $(".small-box-item-more").addClass("active");
+                  });
               }
 
           })
@@ -18,16 +22,19 @@ var Index=(function(){
                 $(this).addClass("flip");
             }
         })
+
+
     }
 
     return{
         getMoreSmallBoxItem:_getMoreSmallBoxItem,
         switchFrontBack:_switchFrontBack
-
     }
 })();
 
 $(function(){
     Index.getMoreSmallBoxItem();
     Index.switchFrontBack();
+
+
 })
